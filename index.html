@@ -3,14 +3,33 @@
 
 <head>
 
-<tital>instafeed</tital>
+<title>instafeed</title>
 
+<script src = "instafeed.min.js" type = "text/javascript"></script>
+
+<script type="text/javascript">
+    var feed = new Instafeed({
+        get: 'tagged',
+        tagName: 'awesome',
+        clientId: 'b086ba7ddb234fa8b23327b9d46f1c8b'
+    });
+    feed.run();
+</script>
 
 </head>
 
 
 
+<body>
 
+
+    <div id="instacontener">
+      <div id="instafeed"></div>
+
+
+    </div>
+   
+</body>
 
 
 
